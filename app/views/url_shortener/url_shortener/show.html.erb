@@ -1,0 +1,3 @@
+<h1>Preview URL</h1>
+<p>Are you sure you want to visit , <%= encode_url(@urlshortener.url) %> <p> 
+<p><%=link_to "Visit External Site", encode_url(@urlshortener.url) , data: { confirm: "Are you sure?" } %>  </p>
