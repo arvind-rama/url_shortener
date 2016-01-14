@@ -22,6 +22,12 @@ gem 'url_shortener', :git => 'git://github.com/arvind-rama/url_shortener.git'
 rake URLShortener:install:migrations
 ```
 
+* Mount Engine
+
+```
+ mount UrlShortener::Engine => "/" ,  as: "shortener_engine"
+```
+
 ## How to use
 
 * Transformation 
