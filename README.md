@@ -10,19 +10,22 @@ The motivation behind this gem was to learn to build a ruby engine/plugin
 
 ## Installation
 
-* Add gem to application
+* Add gem to Gemfile
 
 ```
 gem 'url_shortener', :git => 'git://github.com/arvind-rama/url_shortener.git' 
+
+bundle install
 
 ```
 * Add URL shortener table to application database
 
 ```
-rake URLShortener:install:migrations
+rake shortener_engine:install:migrations
+rake db:migrate
 ```
 
-* Mount Engine
+* Mount Engine to routes.rb
 
 ```
  mount UrlShortener::Engine => "/" ,  as: "shortener_engine"
