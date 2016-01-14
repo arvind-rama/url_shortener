@@ -1,7 +1,7 @@
 UrlShortener
 
 ## Synopsis
-URL Shortener is an alpha engine/plugin gem , when setup and added to an application, it provides the views and services to generate short url and redirection from short url
+URL Shortener is an alpha engine/plugin gem , when setup and added to an application, it provides the views and services to generate short url and redirection from the generated short url
 
 
 ## Motivation
@@ -33,9 +33,9 @@ rake db:migrate
 
 ## How to use
 
-* Transformation 
+* Transform Long URL
 
-http://[host:port||domain]/urls/create?url=https://www.google.com.my/maps/place/KL+City+Centre+Park/@3.1556466,101.7128026,17z/data=!3m1!4b1!4m2!3m1!1s0x31cc37d3dae66605:0xced2781fa7347a4e?hl=en
+http://[host:port||domain]/urls/create?url=[longurl]
 
 This generates a short URL 
 
