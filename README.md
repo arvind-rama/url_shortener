@@ -1,4 +1,4 @@
-= UrlShortener
+UrlShortener
 
 ## Synopsis
 URL Shortener is an alpha engine/plugin gem , when setup and added to an application, it provides the views and services to generate short url and redirection from short url
